@@ -7,6 +7,9 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
+using System.Data.Entity;
+using BricoNayonProject.Models;
+
 namespace BricoNayonProject
 {
     public class Global : HttpApplication
@@ -16,6 +19,9 @@ namespace BricoNayonProject
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            // Initialize the product database.
+            Database.SetInitializer(new ProductDatabaseInitializer());
         }
     }
 }
