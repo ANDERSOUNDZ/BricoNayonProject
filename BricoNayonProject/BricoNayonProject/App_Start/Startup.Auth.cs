@@ -59,11 +59,11 @@ namespace BricoNayonProject
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "271207099741-pna3ppmf8ea5h0k8r308e9fr6s1g96pk.apps.googleusercontent.com",
+                ClientSecret = "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"
+            });
         }
     }
 }
