@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WingtipToys.Checkout
+namespace BricoNayonProject.Checkout
 {
 
 
